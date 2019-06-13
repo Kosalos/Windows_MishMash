@@ -86,6 +86,7 @@
       <ShaderModel>5.0</ShaderModel>
       <EntryPointName />
       <ObjectFileOutput />
+      <AdditionalOptions />
     </FxCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -118,6 +119,7 @@
       <ShaderModel>5.0</ShaderModel>
       <EntryPointName />
       <ObjectFileOutput />
+      <AdditionalOptions />
     </FxCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
