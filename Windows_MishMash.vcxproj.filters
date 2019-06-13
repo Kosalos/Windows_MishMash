@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="Source\common.h" />
+    <ClInclude Include="Source\cShader.h" />
+    <ClInclude Include="Source\Help.h" />
+    <ClInclude Include="Source\pShader.h" />
+    <ClInclude Include="Source\SaveLoad.h" />
+    <ClInclude Include="Source\stdafx.h" />
+    <ClInclude Include="Source\View.h" />
+    <ClInclude Include="Source\vShader.h" />
+    <ClInclude Include="Source\Widget.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="Source\fractal.hlsl" />
+    <FxCompile Include="Source\PixelShader.hlsl" />
+    <FxCompile Include="Source\VertexShader.hlsl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\Help.cpp" />
+    <ClCompile Include="Source\main.cpp" />
+    <ClCompile Include="Source\SaveLoad.cpp" />
+    <ClCompile Include="Source\stdafx.cpp" />
+    <ClCompile Include="Source\View.cpp" />
+    <ClCompile Include="Source\Widget.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="icon1.ico" />
+  </ItemGroup>
+</Project>
