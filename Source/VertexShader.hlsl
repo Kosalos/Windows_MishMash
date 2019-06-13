@@ -10,6 +10,8 @@ struct PS_INPUT
 	float2 Tex : TEXCOORD0;
 };
 
+
 PS_INPUT VS(Transfer IN) {
+
 	return (PS_INPUT)IN;
 }

@@ -266,6 +266,7 @@ float2 functionCall(float2 old, int channel) {
 RWTexture2D<float4> OutputMap : register(u0);
 
 [numthreads(THREAD_COUNT,THREAD_COUNT, 1)]
+
 void CSMain(uint3 p:SV_DispatchThreadID)
 {
 	if (p.x >= uint(XSIZE)) return;
