@@ -135,7 +135,7 @@ static const char* helptext[] = {
 "L: launch the saved file dialog to retrieve a saved image.",
 "A: toggle 'autoChange'",
 "   When active, all parameters slowly change",
-"Spacebar : Toggle visiblity of Parameter panel"
+"Spacebar : Toggle visiblity of Parameter panel",
 "",  // must mark end of list with an empty string!
 };
 
