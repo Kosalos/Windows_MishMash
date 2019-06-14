@@ -9,15 +9,15 @@ extern HBRUSH hgray1;
 extern COLORREF green0, green1, green2;
 extern HBRUSH hgreen1;
 
-constexpr auto LEGEND_LENGTH = 63;
-constexpr auto PERCENT = 100;
-constexpr auto NUM_FORMULAS = 30;
-constexpr auto GRAMMARSTRING_LENGTH = 12;
-constexpr auto GROUPWIDTH = 140;
+#define LEGEND_LENGTH 63
+#define PERCENT 100
+#define NUM_FORMULAS  30
+#define GRAMMARSTRING_LENGTH  12
+#define GROUPWIDTH  140
 
-constexpr auto NUM_FIELDS_PER_EQUATION = 5; // tx,ty,sz,sy,r
-constexpr auto CONTROL_GROUP_BASEINDEX = (NUM_EQUATIONS * NUM_FIELDS_PER_EQUATION);
-constexpr auto NUM_FIELDS = (CONTROL_GROUP_BASEINDEX + 7);
+#define NUM_FIELDS_PER_EQUATION  5 // tx,ty,sz,sy,r
+#define CONTROL_GROUP_BASEINDEX (NUM_EQUATIONS * NUM_FIELDS_PER_EQUATION)
+#define NUM_FIELDS (CONTROL_GROUP_BASEINDEX + 7)
 
 struct Param {
 	char grammarString[GRAMMARSTRING_LENGTH + 4]; // 20 bytes
@@ -57,7 +57,7 @@ public:
 	HBITMAP hbmMem, hbmOld;
 	HBRUSH hbrBkGnd;
 	HFONT hfntOld;
-	HWND equationGroupDropdown[NUM_EQUATIONS] = { NULL };
+	HWND equationGroupDropdown[NUM_EQUATIONS]; // = { NULL };
 	HWND grammarStringEditField;
 
 	EquationGroup equationGroup[NUM_EQUATIONS];

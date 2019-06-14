@@ -35,7 +35,7 @@ cbuffer Control : register(b0)
 void abortProgram(char* name, int line);
 #define ABORT(hr) if(FAILED(hr)) { abortProgram((char *)__FILE__,__LINE__); }
 
-constexpr auto NUM_EQUATIONS = 4;
+#define NUM_EQUATIONS 4
 #define FLOAT4 XMFLOAT4
 #define INT4 XMINT4
 #define STRIPE		control.F1.x

@@ -59,7 +59,7 @@ LRESULT CALLBACK EditProc(HWND hEdit, UINT msg, WPARAM wParam, LPARAM lParam)
 
 // ================================================================================
 static char* CLASS_NAME = (char*)"Widget";
-constexpr auto HELP_BUTTON = 2000;
+#define HELP_BUTTON  2000
 
 LRESULT CALLBACK WidgetWndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 {
@@ -169,7 +169,7 @@ void Widget::create(HWND parent, HINSTANCE hInstance) {
 }
 
 // ================================================================================
-constexpr char* functionNames[] = {
+const char* functionNames[] = {
 	(char*)"Linear", (char*)"Sinusoidal", (char*)"Spherical", (char*)"Swirl", 
 	(char*)"Horseshoe", (char*)"Polar",	(char*)"Hankerchief", (char*)"Heart", 
 	(char*)"Disc", (char*)"Spiral", (char*)"Hyperbolic", (char*)"Diamond", (char*)"Ex",
@@ -569,7 +569,7 @@ bool percentChanged(float& percent, const float changeAmount) {
 	return percent != previousPercent;
 }
 
-constexpr auto CGSIZEY = 155;
+#define CGSIZEY 155
 
 void ControlGroup::draw(HDC hdc) {
 	RECT rc = makeRect(x, y, GROUPWIDTH, CGSIZEY);
@@ -617,7 +617,7 @@ bool ControlGroup::alter() {
 
 // ================================================================================
 
-constexpr auto GGSIZEY = 110;
+#define GGSIZEY 110
 
 void EquationGroup::draw(HDC hdc) {
 	RECT rc = makeRect(x, y, GROUPWIDTH, GGSIZEY);

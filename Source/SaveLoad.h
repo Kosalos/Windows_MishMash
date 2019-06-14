@@ -1,7 +1,7 @@
 #pragma once
 #include "stdafx.h"
 
-constexpr auto MAX_ENTRIES = 100;
+#define MAX_ENTRIES 100
 
 class SaveLoad {
 public:
@@ -10,7 +10,7 @@ public:
 	HDC hdc;
 	HFONT font;
 
-	char data[MAX_ENTRIES][128] = { 0 };
+	char data[MAX_ENTRIES][128]; // = { 0 };
 	int count;
 
 	SaveLoad() {
